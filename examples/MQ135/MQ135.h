@@ -46,7 +46,7 @@ class MQ135 {
   float _rzero; // Calibration resistance at atmospheric CO2 level
 
  public:
-  MQ135(uint8_t pin, uint8_t refvpin, float rzero=130.0, float rload=44.0);
+  MQ135(uint8_t pin, uint8_t refvpin, float rzero=117.0, float rload=44.0);
   float getCorrectionFactor(float t, float h);
   float getResistance();
   float getCorrectedResistance(float t, float h);
